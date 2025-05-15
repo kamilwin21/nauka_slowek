@@ -1,4 +1,4 @@
 fastapi
-unvicorn
+uvicorn[standard]
 sqlalchemy
 pydantic
