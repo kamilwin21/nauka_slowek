@@ -1,5 +1,8 @@
 from fastapi import FastAPI
 from database import SessionLocal
+import models
+
+models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
