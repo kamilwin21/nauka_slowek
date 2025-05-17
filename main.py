@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Depends
 from database import SessionLocal, engine
-from sqlalchemy.orm import Session, func
+from sqlalchemy.orm import Session
+from sqlalchemy import func
 from datetime import datetime, timedelta
 import models, crud
 
