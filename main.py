@@ -3,6 +3,7 @@ from database import SessionLocal, engine
 from sqlalchemy.orm import Session
 from sqlalchemy import func
 from datetime import datetime, timedelta
+from models import Word
 import models, crud
 
 models.Base.metadata.create_all(bind=engine)
