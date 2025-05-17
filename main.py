@@ -1,8 +1,8 @@
 from fastapi import FastAPI
-# from database import SessionLocal
-# import models
+from database import SessionLocal
+import models
 
-# models.Base.metadata.create_all(bind=engine)
+models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
@@ -10,9 +10,9 @@ app = FastAPI()
 def read_root():
   return {"message" : "Hello world"}
 
-# def get_db():
-#   db = SessionLocal()
-#   try:
-#     yield db
-#   finally:
-#     db.close()
+def get_db():
+  db = SessionLocal()
+  try:
+    yield db
+  finally:
+    db.close()
