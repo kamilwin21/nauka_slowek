@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
 from database import SessionLocal
 from database import engine
 import models, crud
