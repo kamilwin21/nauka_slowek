@@ -2,4 +2,5 @@ fastapi
 uvicorn
 sqlalchemy>=1.4,<2.0
 pydantic
+psycopg2-binary
 databases
