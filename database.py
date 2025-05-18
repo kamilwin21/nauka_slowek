@@ -8,8 +8,6 @@ DATABASE_URL = "postgresql://words_9kcm_user:UdzQYKQHMaMrEAWlZM2sKmtqZN9ZMBPF@dp
 
 engine = create_engine(
     # DATABASE_URL, connect_args={"check_same_thread": False}
-        DATABASE_URL
-
-)
+        DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
